@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Fire &#038; Water | The Climate Project</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body{
+      background-color: #000000;
+    }
+    #opening{
+      background-image: url(images/scenic-background.png);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      height: 100vh;
+    }
+    
+    #bushes{
+      height: 100%;
+      background-image: url(images/bushes.png);
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+    }
+    
+    #rushing-water{
+      background-image: url(images/rushing-water.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+    }
+    
+    #mountains{
+      background-image: url(images/trees-sunset.png);
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+    
+    .title{
+      text-indent: -10000rem;
+      background-image: url(images/fire-water-title.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      font-size: 4rem;
+    }
+    
+    #fish{
+      background-image: url(images/fish.png);
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: 10% 0;
+    }
+    
+    #fern{
+      background-image: url(images/fern.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    #fire{
+      background-image: url(images/fire-smoke.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center -500px;
+    }
+    @media (min-aspect-ratio: 1/1){
+      #opening{
+        background-position: center center;
+        height: 100vw;
+      }
+      #bushes{
+        background-size: cover;
+        background-position: center 300px;
+      }
+      #rushing-water{
+        background-size: cover;
+      }
+    }
+    
+    .vh-200{
+      min-height: 200vh;
+    }
+    .vh-300{
+      min-height: 300vh;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <div id="opening" class="container-fluid pt-0">
+    <div id="bushes" class="row d-flex flex-column align-items-center justify-content-center" data-0-top-top="transform:translateY(200px);" data-0-top-center="transform:translateY(0px);">
+      <div class="col-10 col-sm-8 col-md-6 text-light text-center fw-bold fs-4" data-0-bottom-top="transform:translateY(300px);" data-0-top-bottom="transform:translateY(-300px);">
+        <h1 class="title">Fire and Water</h1>
+        <p>By Callie Rhoades</p>
+        <p>The Climate Project</p>
+      </div>
+    </div>    
+  </div>
+  <div id="rushing-water" class="row position-relative vh-100">
+    <div id="fish" class="position-absolute top-0 vh-100" data-300-top-top="transform:rotate(0deg)" data-700-top-top="transform:rotate(-45deg)" data-anchor-target="#rushing-water"></div>
+    <div id="fern" class="position-absolute top-0 vh-100"></div>
+  </div>
+  <div id="fire" class="container-fluid vh-200 p-0">
+    <div class="row d-flex flex-column align-items-center justify-content-center">
+      <p class="col-10 col-sm-8 col-md-6 text-light text-center fw-bold fs-4 text-light" data-0-bottom-top="transform:translateY(700px);" data--1200-bottom-top="transform:translateY(100px);">In July of 2022, the McKinney Fire scorched over 60,000 acres near the California-Oregon border</p>
+    </div>
+    <div id="mountains" class="vh-100" data--1000-bottom-top="transform:translateY(1000px);" data--1500-bottom-top="transform:translateY(900px);"></div>
+  </div>
+  
+  <script src="js/jquery-3.6.4.min.js"></script>
+  <script src="js/skrollr.min.js"></script>
+  <script>
+    const s = skrollr.init();
+  </script>
+
+</body>
+
+</html>
